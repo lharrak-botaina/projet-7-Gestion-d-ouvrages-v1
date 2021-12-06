@@ -110,6 +110,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  color: rgb(179, 29, 134);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -3046,13 +3047,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #96177a;
+  border-color: #96177a;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #5b5661;
+  border-color: #5b5661;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
