@@ -15,8 +15,9 @@ h1{
 
   display: none;
 }
- .breadcrumb {
+.breadcrumb {
    display: flex;
    justify-content: space-evenly;
+   list-style: none;
    
  }

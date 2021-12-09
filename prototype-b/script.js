@@ -2,7 +2,7 @@ var selectedRow = null
 document.getElementById("formSubmit").addEventListener("submit", function (event) {
     event.preventDefault();
     var work = readwork();
-    if(selectedRow ===null){
+    if(selectedRow === null){
         insertNewRow(work);
     }
     else{
@@ -84,13 +84,13 @@ function updateRecord(work){
 //Delete the work
 function onDelete(td){
     if(confirm('Do you want to delete this record?')){
-      var  row = td.parentElement.parentElement;
+      var row = td.parentElement.parentElement;
         document.getElementById('worksTable').deleteRow(row.rowIndex)
     }
     resetForm();
 }
 
-//reset the work
+// reset the work
 function resetForm(){
     document.getElementById('inputTitle').value ='';
     document.getElementById('inputAuthor').value ='';
