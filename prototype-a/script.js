@@ -38,9 +38,8 @@ function insertNewRow(work) {
     
     newRow.insertCell(4).innerHTML= work.language
    
-    cell6 = newRow.insertCell(5)
-    cell6.innerHTML = work.type
-    cell7 = newRow.insertCell(6)
-
+    cell6 = newRow.insertCell(5);
+    cell6.innerHTML = work.type;
+    
 
 }
