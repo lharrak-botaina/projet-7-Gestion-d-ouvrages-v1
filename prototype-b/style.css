@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-/* .navList{
+.navList{
   display: inline-block;
   background-color: cornflowerblue;
   width: 100%;
@@ -20,29 +20,4 @@ h1{
    justify-content: space-evenly;
    list-style: none;
    
- } */
- table{
-   width: 80%;
-   margin: 40px auto;
-   background: rgb(124, 154, 164);
- }
- table .list{
-   text-align: center;
-   width: 100%;
- }
- td{
-   border:1px solid rgb(204, 200, 200);
-   text-align: left;
-   padding: 8px 15px;
- }
- tr:nth-child(even), table.list thead> tr{
-   background-color: rgb(204, 200, 200);
- }
- input[type="text"],input[type="number"],input[type="date"],input[type="radio"]{
-   width: 91%;
-   padding: 12px 20px;
-   margin: 8px 0;
-   display: inline-block;
-   border:1px solid rgb(165, 161, 161);
-   border-radius: 4px;
  }
