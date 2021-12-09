@@ -33,7 +33,8 @@ function readwork() {
 
 
 function insertNewRow(work) {
-    var tableBody = document.getElementById("worksTable").getElementsByTagName('tbody')[0];
+    if(confirm('are you sure ?')){
+        var tableBody = document.getElementById("worksTable").getElementsByTagName('tbody')[0];
     var newRow = tableBody.insertRow(tableBody.length);
     newRow.insertCell(0).innerHTML = work.title;
 
@@ -49,21 +50,24 @@ function insertNewRow(work) {
     cell6.innerHTML = work.type;
     
     cell7 = newRow.insertCell(6);
-    cell6.innerHTML = `<button onClick='onEdit(this)'>Edit</button>  <button onClick='onDelete(this)'>Delete</button>`;
+    cell7.innerHTML = `<button onClick='onEdit(this)'>Edit</button>  <button onClick='onDelete(this)'>Delete</button>`;
 
+    }
+    
 
 
 
 }
 //Edit the work
 function onEdit(td){
-selectedRow = td.parentElement.parentElement;
-document.getElementById('inputTitle').value = selectedRow.cells[0].innerHTML;
-document.getElementById('inputAuthor').value = selectedRow.cells[1].innerHTML;
-document.getElementById('inputPrix').value = selectedRow.cells[2].innerHTML;
-document.getElementById('inputDate').value = selectedRow.cells[3].innerHTML;
-document.getElementById('inputLanguage').value = selectedRow.cells[4].innerHTML;
-document.getElementById('gridCheck').value = selectedRow.cells[5].innerHTML;
+    
+    selectedRow = td.parentElement.parentElement;
+    document.getElementById('inputTitle').value = selectedRow.cells[0].innerHTML;
+    document.getElementById('inputAuthor').value = selectedRow.cells[1].innerHTML;
+    document.getElementById('inputPrix').value = selectedRow.cells[2].innerHTML;
+    document.getElementById('inputDate').value = selectedRow.cells[3].innerHTML;
+    document.getElementById('inputLanguage').value = selectedRow.cells[4].innerHTML;
+    document.getElementById('gridCheck').value = selectedRow.cells[5].innerHTML;
 
 
 }
@@ -80,10 +84,10 @@ function updateRecord(work){
 //Delete the work
 function onDelete(td){
     if(confirm('Do you want to delete this record?')){
-        row = td.parentElement.parentElement;
+      var  row = td.parentElement.parentElement;
         document.getElementById('worksTable').deleteRow(row.rowIndex)
     }
-    
+    resetForm();
 }
 
 //reset the work
