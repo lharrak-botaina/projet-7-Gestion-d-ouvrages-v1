@@ -100,3 +100,14 @@ function resetForm(){
     document.getElementById('gridCheck').value ='';
 
 }
+
+
+function show(){
+
+    
+    document.querySelector('#formSubmit').style.display = 'flex';
+
+}
+function hide (){
+    document.querySelector('#formSubmit').style.display ='none';
+}

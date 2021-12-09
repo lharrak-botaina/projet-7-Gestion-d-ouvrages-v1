@@ -19,16 +19,21 @@
         <div id="layoutSidenav_content">
             <main>
                 <div >
-                    <h1 >Ouvrages</h1>
+                    <div class="navList">
+                        <h1 >Ouvrages</h1>
                     <ol class="breadcrumb mb-4">
                         <li ><a>Tableau de bord</a></li>
-                        <li >Ouvrages</li>
+                        <li >  Ouvrages</li>
                     </ol>
+                    </div>
+                    
 
                      
                         <div>
-
-                            <form id="formSubmit" autocomplete="off">
+                            <button onclick=show(this)>show</button>
+                           
+                            <form  id="formSubmit" autocomplete="off">
+                                <div id="hide" onclick=hide(this) >x</div>
                                 <div class="col-md-6">
                                     <label for="inputTitle" >Title</label>
                                     <input type="text"  id="inputTitle">
