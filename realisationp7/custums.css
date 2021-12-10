@@ -24,7 +24,17 @@
     
     
 }
+.btn-primary {
+    color: #fff;
+    background-color: #7C001A;
+    border-color: #897270;
+}
 
+.btn-primary:hover {
+    color: #fff;
+    background-color: #897270;
+    border-color: #7C001A;
+}
 #formulaire{
     display: none;
 }
