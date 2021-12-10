@@ -9,6 +9,7 @@ document.getElementById("formSubmit").addEventListener("submit", function (event
         if (confirm("Êtes-vous sûr de modifier cette œuvre?"))
             editRow(work)
         resetForm();
+        hide()
     } else {
         alert("S'il-vous-plaît remplissez tous les champs requis")
     }
@@ -71,7 +72,7 @@ function insertNewRow(work) {
 
     cell7.appendChild(editButton)
     cell7.appendChild(deleteButton)
-
+hide();
 }
 
 function onEdit(td) {
@@ -87,7 +88,7 @@ function onEdit(td) {
         if (checkValue[i].value == selectedRow.cells[5].innerHTML) {
             checkValue[i].checked = true
         }
-    } 
+    } show();
 }
 
 function editRow(workToEdit) {
@@ -97,7 +98,7 @@ function editRow(workToEdit) {
     selectedRow.cells[3].innerHTML = workToEdit.date;
     selectedRow.cells[4].innerHTML = workToEdit.language;
     selectedRow.cells[5].innerHTML = workToEdit.type;
-
+    
 }
 
 
@@ -145,13 +146,13 @@ function resetForm(){
 function show(){
 
     
-    document.querySelector('#formSubmit').style.display = 'flex';
+    document.querySelector('#formulaire').style.display = 'flex';
 
 }
 function hide(){
 
     
-    document.querySelector('#formSubmit').style.display = 'none';
+    document.querySelector('#formulaire').style.display = 'none';
 
 }
 

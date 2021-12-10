@@ -12,28 +12,33 @@
 #submitButton{
     background-color: #897270 !important;
 }
-.btn-primary {
+#submitButton {
     color: #fff;
     border: 2px solid;
-    border-color:  #000000;
+    border-color:  #7C001A;
+    
 }
-.btn-primary:hover{
-    border-color:#3f3c3c98 ;
-    background-color:#3f3c3c98 ;
+#submitButton:hover{
+    border-color:  #897270;
+    background-color:#7C001A  !important;
+    
+    
+}
 
-}
-.btn-primary {
-    color: rgb(255, 255, 255);
-    background-color: #D9415D;
-    border-color: #D9415D;
-}
-#formSubmit{
+#formulaire{
     display: none;
 }
-.showHide{
+.show button{
     justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+    background-color: #7C001A;
+    border-color: #7C001A;
+    border-radius: 20px;
+    margin: 10px;
 }
-.hide{
+.hide {
     display: flex;
     justify-content: flex-end;
+    
+    border-radius: 10px ;
 }
