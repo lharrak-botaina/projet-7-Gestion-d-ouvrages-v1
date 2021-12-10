@@ -1,16 +1,16 @@
 
  h1{
-     color: #D9415D;
+     color: #897270;
  }
  .sb-sidenav,.sb-sidenav-footer{
-    background-color: #000000 !important;
+    background-color: #585656 !important;
 
 }
 .sb-topnav{
-    background-color: #3f3c3c98 !important;
+    background-color: #7C001A !important;
 }
 #submitButton{
-    background-color: #D9415D !important;
+    background-color: #897270 !important;
 }
 .btn-primary {
     color: #fff;
@@ -26,4 +26,14 @@
     color: rgb(255, 255, 255);
     background-color: #D9415D;
     border-color: #D9415D;
+}
+#formSubmit{
+    display: none;
+}
+.showHide{
+    justify-content: space-evenly;
+}
+.hide{
+    display: flex;
+    justify-content: flex-end;
 }
