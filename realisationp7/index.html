@@ -6,95 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Interface de gestion des ouvrages" />
-    <meta name="author" content="ESSARRAJ Fouad" />
+    <meta name="author" content="lharrak botaina" />
     <title>Gestion des ouvrages</title>
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
-    </script>
 </head>
 
 <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">Gestion des ouvrages</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+    </nav>
     <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    lharrak botaina
+                </div>
+            </nav>
+        </div>
         <div id="layoutSidenav_content">
             <main>
-                <div >
-                    <div class="navList">
-                        <h1 >Ouvrages</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li ><a>Tableau de bord</a></li>
-                        <li >  Ouvrages</li>
-                    </ol>
-                    </div>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4">Ouvrages</h1>
                     
+                    <div class="card mb-4">
 
-                     
-                        <div>
-                            <!-- <button onclick=show(this)>show</button> -->
-                           
-                            <form  id="formSubmit" autocomplete="off">
-                                <!-- <div id="hide" onclick=hide(this) >x</div> -->
+                        <div class="card-header">
+                            <div>📝Ouvrages</div>
+                        </div>
+                        <div class="card-body">
+
+                            <form id="formSubmit"  class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="inputTitle" >Title</label>
-                                    <input type="text" required id="inputTitle">
+                                    <label for="inputTitle" class="form-label">Title</label>
+                                    <input required type="text" class="form-control" id="inputTitle">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputAuthor" >Author</label>
-                                    <input required type="text" id="inputAuthor">
+                                    <label for="inputAuthor" class="form-label">Author</label>
+                                    <input required type="text" class="form-control" id="inputAuthor">
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputPrix" >Prix</label>
-                                    <input required type="number" id="inputPrix">
+                                    <label for="inputPrix" class="form-label">Prix</label>
+                                    <input required type="number" step=any  class="form-control" id="inputPrix">
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputDate">Date de </label>
-                                    <input required type="date" id="inputDate">
+                                    <label for="inputDate" class="form-label">Date de </label>
+                                    <input required type="date" class="form-control" id="inputDate"
+                                        placeholder="Apartment, studio, or floor">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputLanguage">Langue</label>
-                                    <select required id="inputLanguage">
+                                    <label for="inputLanguage" class="form-label">Langue</label>
+                                    <select required id="inputLanguage" class="form-select">
                                         <option value="" disabled selected>choisir...</option>
                                         <option value="français">Français</option>
                                         <option value="anglais">Anglais</option>
                                         <option value="arabe">Arabe</option>
                                     </select>
                                 </div>
-                                
                                 <div class="col-12">
                                     <label for="workType" class="form-label">Type</label>
-                                    <div>
-                                        <input required value="Roman" name="workType" type="radio" id="gridCheck">
-                                        <label for="gridCheck">
+                                    <div class="form-check">
+                                        <input required class="form-check-input" name="workType" value="Roman" type="radio" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
                                             Roman
                                         </label>
                                     </div>
-                                    <div>
-                                        <input required value="Essai" name="workType" type="radio" id="gridCheck">
-                                        <label   for="gridCheck">
+                                    <div class="form-check">
+                                        <input required class="form-check-input" name="workType" value="Essai" type="radio" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
                                             Essai
                                         </label>
                                     </div>
 
-                                    <div>
-                                        <input required  name="workType" value="Bande-Dessinée" type="radio" id="gridCheck">
-                                        <label  for="gridCheck">
+                                    <div class="form-check">
+                                        <input required class="form-check-input" name="workType" value="Bande-Dessinée"  type="radio" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
                                             Bande-Dessinée
                                         </label>
                                     </div>
 
                                 </div>
-                                <div>
-                                    <button id="submitButton" type="submit">Ajouter</button>
+                                <div class="col-12">
+                                    <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
 
                         </div>
+                    </div>
                     <div class="card mb-4">
-                        <div>
+                        <div class="card-header">
                             📘
                         </div>
                         <div class="card-body">
-                            <table class=" list" id="worksTable">
+                            <table class="table" id="worksTable">
                                 <thead>
                                     <tr>
                                         <th>Titre</th>
@@ -107,15 +118,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </main>
-            <!-- <footer class="py-4 bg-light mt-auto">
+            <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
                         <div class="text-muted">Copyright &copy; Your Website 2021</div>
@@ -126,10 +136,11 @@
                         </div>
                     </div>
                 </div>
-            </footer> -->
+            </footer>
         </div>
     </div>
     <script src="script.js"></script>
+
 </body>
 
 </html>
