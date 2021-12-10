@@ -102,12 +102,12 @@ function resetForm(){
 }
 
 
-// function show(){
+function show(){
 
     
-//     document.querySelector('#formSubmit').style.display = 'flex';
+    document.querySelector('#formSubmit').style.display = 'flex';
 
-// }
-// function hide (){
-//     document.querySelector('#formSubmit').style.display ='none';
-// }
+}
+function hide (){
+    document.querySelector('#formSubmit').style.display ='none';
+}

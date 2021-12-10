@@ -1,0 +1,29 @@
+
+ h1{
+     color: #D9415D;
+ }
+ .sb-sidenav,.sb-sidenav-footer{
+    background-color: #000000 !important;
+
+}
+.sb-topnav{
+    background-color: #3f3c3c98 !important;
+}
+#submitButton{
+    background-color: #D9415D !important;
+}
+.btn-primary {
+    color: #fff;
+    border: 2px solid;
+    border-color:  #000000;
+}
+.btn-primary:hover{
+    border-color:#3f3c3c98 ;
+    background-color:#3f3c3c98 ;
+
+}
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: #D9415D;
+    border-color: #D9415D;
+}

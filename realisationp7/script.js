@@ -87,7 +87,7 @@ function onEdit(td) {
         if (checkValue[i].value == selectedRow.cells[5].innerHTML) {
             checkValue[i].checked = true
         }
-    } resetForm();
+    } 
 }
 
 function editRow(workToEdit) {
@@ -106,7 +106,7 @@ function onDelete(td) {
     if (confirm("Êtes-vous sûr de supprimer cette œuvre?")) {
         row = td.parentElement.parentElement;
         document.getElementById("worksTable").deleteRow(row.rowIndex)
-    }
+    }resetForm();
 }
 
 
