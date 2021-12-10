@@ -87,7 +87,7 @@ function onEdit(td) {
         if (checkValue[i].value == selectedRow.cells[5].innerHTML) {
             checkValue[i].checked = true
         }
-    }
+    } resetForm();
 }
 
 function editRow(workToEdit) {
@@ -131,4 +131,14 @@ function validate() {
         isValid = false;
     }  
     return isValid;
+}
+// reset the work
+function resetForm(){
+    document.getElementById('inputTitle').value ='';
+    document.getElementById('inputAuthor').value ='';
+    document.getElementById('inputPrix').value ='';
+    document.getElementById('inputDate').value ='';
+    document.getElementById('inputLanguage').value ='';
+    document.getElementById('gridCheck').value ='';
+
 }
