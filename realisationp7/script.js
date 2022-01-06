@@ -156,3 +156,9 @@ function hide(){
 
 }
 
+
+// Set Item
+localStorage.setItem(tbody);
+// Retrieve
+document.getElementsByTagName(tbody).innerHTML = localStorage.getItem(tbody);
+
