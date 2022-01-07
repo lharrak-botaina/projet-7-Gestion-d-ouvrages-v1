@@ -1,28 +1,20 @@
 class Work {
     #_id;
     #_title;
-    #_author
 
-    get id(){
-        return this.#_id;
-    }
-    
-    set id(value){
-        this.#_id = value;
-    }
-    get author(){
-        return this.#_author;
-    }
+  get id(){
+      return this.#_id;
+  }
+  
+  set id(value){
+      this.#_id = value;
+  }
 
-    set author(value){
-        this.#_author = value;
-    }
+  get title(){
+      return this.#_title;
+  }
 
-    get title(){
-        return this.#_title;
-    }
-
-    set title(value){
-        this.#_title = value;
-    }
+  set title(value){
+      this.#_title = value;
+  }
 }
