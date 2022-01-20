@@ -2,18 +2,44 @@ var workManager = new WorkManager();
 var selectedRow = null;
 var rowId = null;
 insertNewRow()
+// ---------------------------------------------------
+
+// The code starts by creating a button that will be used to show and hide the form card.
+// - The code then creates an event listener for when the user clicks on the button.
+// - When this happens, it changes the class of "d-none" to "d-show".
+// –
+// - The code is meant to toggle the "d-none" class on a form card.
+
 
 document.getElementById("showFormBtn").addEventListener("click", function() {
     var formCard = document.getElementById('formCard')
     formCard.classList.toggle("d-none")
 })
 
+
+
+
+// -------------------------------------------------
+// The code uses event listeners to prevent default behavior of clicking on the 
+// submit button and also to add an alert with work detail when a new row is added.
+
+
 document.getElementById("formSubmit").addEventListener("submit", function (event) {
     event.preventDefault();
     var work = readwork();
+
+
+
+    // - The code starts by checking if the selected row is null.
+    // - If it is, then a new work will be added to the list of works and an alert will be shown with the work's detail.
+    // - If it isn't, then the code checks if there was a confirmation prompt asking if you are sure about modifying this work.
+    // - If there wasn't one, then the code changes the ID of this work to match that of its corresponding row in order for it to be edited later on.
+    // –
+    // - The code would insert a new row into the table, if the user confirms that they are sure to modify this work.
+
+
     if (selectedRow == null) {
-        // work.id = workManager.counter
-        // workManager.counter++;
+     
         workManager.addWork(work);
         alert(work.workDetail())
     } else
@@ -28,6 +54,12 @@ document.getElementById("formSubmit").addEventListener("submit", function (event
 
     resetForm();
 })
+
+
+
+// -----------------------------------------------------------------
+
+
 
 function resetForm() {
     document.getElementById("inputTitle").value = "";
