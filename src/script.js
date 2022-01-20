@@ -16,8 +16,7 @@ document.getElementById("showFormBtn").addEventListener("click", function() {
     formCard.classList.toggle("d-none")
 })
 
-
-
+// eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjM3fQ.JR1v6n_nq3ZLegdjJmgD1r3N1tROaRsT1DtRuoNKie4
 
 // -------------------------------------------------
 // The code uses event listeners to prevent default behavior of clicking on the 
@@ -105,22 +104,22 @@ function insertNewRow() {
 
         cell3 = newRow.insertCell(2);
         cell3.innerHTML = workList[i].author;
-        cell3.className = "d-none d-lg-table-cell"
+        // cell3.className = "d-none d-lg-table-cell"
 
         cell4 = newRow.insertCell(3);
         cell4.innerHTML = workList[i].price;
-        cell4.className = "d-none d-lg-table-cell"
+        // cell4.className = "d-none d-lg-table-cell"
 
         cell5 = newRow.insertCell(4);
         cell5.innerHTML = workList[i].date;
-        cell5.className = "d-none d-lg-table-cell"
+        // cell5.className = "d-none d-lg-table-cell"
 
         cell6 = newRow.insertCell(5);
         cell6.innerHTML = workList[i].language
 
         cell7 = newRow.insertCell(6)
         cell7.innerHTML = workList[i].type
-        cell7.className = "d-none d-lg-table-cell"
+        // cell7.className = "d-none d-lg-table-cell"
 
 
         cell8 = newRow.insertCell(7)
@@ -189,3 +188,8 @@ function onPrint() {
     win.document.close();
     win.print();
 }
+
+
+
+
+

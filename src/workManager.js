@@ -26,7 +26,7 @@ class WorkManager {
         }
     }
 
-
+    // method to get the value of a specified local storage item
     getItem(id) {
         for (var i = 0; i < this.workList.length; i++) {
             if (id == this.workList[i].id) {
