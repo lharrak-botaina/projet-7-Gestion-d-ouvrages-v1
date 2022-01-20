@@ -7,7 +7,7 @@ class WorkManager {
     }
 
     addWork(work) {
-        //this.#workList = JSON.parse(localStorage.getItem("workList")  || "[]")
+        this.#workList = JSON.parse(localStorage.getItem("workList")  || "[]")
         this.open()
         this.#counter = this.#counter + 1
         work.id = this.#counter
@@ -51,6 +51,7 @@ class WorkManager {
         
    
     }
+
 
     save(){
 
