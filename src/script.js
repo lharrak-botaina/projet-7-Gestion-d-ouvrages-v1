@@ -14,7 +14,9 @@ insertNewRow()
 document.getElementById("showFormBtn").addEventListener("click", function() {
     var formCard = document.getElementById('formCard')
     formCard.classList.toggle("d-none")
+    
 })
+
 
 // eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjM3fQ.JR1v6n_nq3ZLegdjJmgD1r3N1tROaRsT1DtRuoNKie4
 
